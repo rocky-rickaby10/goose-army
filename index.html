@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Goose Army</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rocky-rickaby10.github.io/goose-army/index.html">
-    <meta property="og:title" content="The Goose Army">
-    <meta property="og:description" content="The almighty goose army. In every color...">
-  </head>
-  <body>
-    <h1>The Goose Army</h1>
-    <div id="duck-border">
-      <div class="flex">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABBCAYAAACHHGk/AAAAAXNSR0IArs4c6QAAAvlJREFUeF7tmj1u3DAQhZ+MNLmBO/eLyAdI4yuk8hYufbTAhVLlCvYRImOvEPgEKRJgA8qmQVOUZjj8EXcxbgSsSM7MN284lOQO+jcj0CmTOQGFElCFQlEovM1ClaJKUaXwCKhSeJx0TzlVpYzjePR97/u+WEKLLcwT6vooC+NL388GPo/j9FsJOGIooezlyuYaDN9GCTjRUGo4bGyE1LGkq9xgoqDEOmuDiHG6hg2qtNlQpM66DnDgSOy8ALgEfgP4C+CKCpq6z4IicVQidamdDvgJ4NubzScAN1Tga/dJKFJHKadCqpHaMv36AngE8BXAdwD3lP0moYT2GwqKm8HZwQXAHwCfARjgKa16VSmUkynZWGqtS13Hd/QDlAdntbtXKClnmGagmCBMMGuteKYUF4ZH+flaDqYpKNHKW4EyQb6WldHpQiGAWMDdHchm4idDoQTkefZQTMyxajldKCbaQiWkUM6qfGwwhFpiS2cqN6oN1jzAUb6E7k9nm1/zl1DFuo9Z+BSg2CP98QHvB12JQt5BcrLTMpjU55xQ/GT52EmtgtkUSqultDkUC8ZcY96hckpUOqYJKK2BaQaKu89srZomoAzDcNzv993bFcMwYLfbTZy2KKkmoLi1754L7PuL2nA2heIpxCplut7+2+PHpwHmat941VLNplCWuoOvFjuuBpwSQFjPPjZIrlKsYszV7D0xn1lj2/LmUGId9sfnhlMKSDalON3ow17j/56rSxkgh8NhUmJqspKefXIaT1FNSYVEPSWbwWt7ClcpKcqxH7isQqw/OZMVDUVqPNSd/HcdJf8BSOI3uyYlSnHPL25Xsr9LFebOkwRNzWFDoRYK3V86w0w7vOAjlcQHyRw2FFWKBG9gztkrhXOy9feIkntKprwFl2GXj9QJTveRrl1qnhiKZI9ptdv4cMVQSmWphXWTodRSTE1YyVBqOlvLVnYouZRTC0AzT8lbBsyxnV0pHKOtj1EogQwpFIXCK1xViipFlcIjEBj1HwrMHG9adfvbAAAAAElFTkSuQmCC" alt="Roose">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABFCAYAAAACRBuaAAAAAXNSR0IArs4c6QAAAx9JREFUeF7tmruO00AUhn9LCIluSxokRIFQpFCE50CiIgUF29BR8go0NHTUNFuEluegwShUoIXtQEIUCBAGBY1hkGNsz/nn4lvONt44x3P55psz49gZ9E9MIBNHaiAUFiGBwlJYBAEiVM1SWAQBIlTNOgRYeZ7v6v1cLpdJBz9p4cSgiUMtpBc3L/13zY3nZ+W5oiiwWq0eAHgC4Ju4cEfgpGAZUE2Qqn388usT7p9d2QK4BuANgKsHB0sCykA5Pj16CWAJ4AeALM/z87Gm5yTMkoIqp+DuO+69u/gVwAUAr59e/ryw09N8HwJudrAMkI/Fe3wo3uLR41t7M/DV9bz87Ats9LAYq/5Ow3+AdifN2cpA8wE2K1jHp0d7dNpg2aDsDvdDwqxgSc2qEmWAzQ7W3Yf7drm2DQrLRajyvcJSWHIC0qnIWGVqD85ZTTe0Xd1il2x261Ct2wWtN1hdN7RdsKq76XpcE8gQWLb8JmgsKG+zYnSgCWgbSNfNs2twWJvbyqOnYSpQ8owki7TgY4GizZoKKNMxAysmKArWlEApLNnsK6NSWCU2S636M1KiBK+wFBYxsRWWwtIETziQaiWcZYJPsXO3YzW71VBhTWkamrZOZa81eM5SWMQ+y86CKdg1CrOmACwlKPHWoZ5fx2rYKGHZHGaOIT/5EoucMzQ1KG+zqi2vPt0ZClwfoLxgbTab3Xq9zpqOi8Wi1YBUIC0o2x6nggEBoh08U/7uBOWLsfZdKMm1PiBT7tTb2kzD6jLLGnf75xrPzm1QP1aNZB/O1juw3W7RZLhkcHxjaFhdFVmrWkeGfB+qul0x/8d+WsNCo2HFMktSTltu7DrPAmDiaViuwrvs8nlk7qqvz+9pWBIjJDlLUs7szZKOdJOBYzcviVkuI9rMs+dd188mZ0nMmmpeo82yMEJyTgqzJIMUGuMNK6TigzMrxLCYZoUMGnvtIGaZRh7Eatg2GiE5zGf1Y62IET+YWTEa33cZ0WGlNqxvQNX6osMasjOp6+4Nlq9xqQEw5fcGi2nUWGMVFjEyCkthEQSIUDVLYREEiNDfK1pxcx71PlIAAAAASUVORK5CYII=" alt="Puroose">
+   <head>
+      <title>Goose Army</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="favicon.png">
+      <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://rocky-rickaby10.github.io/goose-army/index.html">
+      <meta property="og:title" content="The Goose Army">
+      <meta property="og:description" content="The almighty goose army. In every color...">
+   </head>
+   <body>
+      <h1>The Goose Army</h1>
+      <div id="duck-border">
+         <div class="flex">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABBCAYAAACHHGk/AAAAAXNSR0IArs4c6QAAAvlJREFUeF7tmj1u3DAQhZ+MNLmBO/eLyAdI4yuk8hYufbTAhVLlCvYRImOvEPgEKRJgA8qmQVOUZjj8EXcxbgSsSM7MN284lOQO+jcj0CmTOQGFElCFQlEovM1ClaJKUaXwCKhSeJx0TzlVpYzjePR97/u+WEKLLcwT6vooC+NL388GPo/j9FsJOGIooezlyuYaDN9GCTjRUGo4bGyE1LGkq9xgoqDEOmuDiHG6hg2qtNlQpM66DnDgSOy8ALgEfgP4C+CKCpq6z4IicVQidamdDvgJ4NubzScAN1Tga/dJKFJHKadCqpHaMv36AngE8BXAdwD3lP0moYT2GwqKm8HZwQXAHwCfARjgKa16VSmUkynZWGqtS13Hd/QDlAdntbtXKClnmGagmCBMMGuteKYUF4ZH+flaDqYpKNHKW4EyQb6WldHpQiGAWMDdHchm4idDoQTkefZQTMyxajldKCbaQiWkUM6qfGwwhFpiS2cqN6oN1jzAUb6E7k9nm1/zl1DFuo9Z+BSg2CP98QHvB12JQt5BcrLTMpjU55xQ/GT52EmtgtkUSqultDkUC8ZcY96hckpUOqYJKK2BaQaKu89srZomoAzDcNzv993bFcMwYLfbTZy2KKkmoLi1754L7PuL2nA2heIpxCplut7+2+PHpwHmat941VLNplCWuoOvFjuuBpwSQFjPPjZIrlKsYszV7D0xn1lj2/LmUGId9sfnhlMKSDalON3ow17j/56rSxkgh8NhUmJqspKefXIaT1FNSYVEPSWbwWt7ClcpKcqxH7isQqw/OZMVDUVqPNSd/HcdJf8BSOI3uyYlSnHPL25Xsr9LFebOkwRNzWFDoRYK3V86w0w7vOAjlcQHyRw2FFWKBG9gztkrhXOy9feIkntKprwFl2GXj9QJTveRrl1qnhiKZI9ptdv4cMVQSmWphXWTodRSTE1YyVBqOlvLVnYouZRTC0AzT8lbBsyxnV0pHKOtj1EogQwpFIXCK1xViipFlcIjEBj1HwrMHG9adfvbAAAAAElFTkSuQmCC" alt="Roose">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABFCAYAAAACRBuaAAAAAXNSR0IArs4c6QAAAx9JREFUeF7tmruO00AUhn9LCIluSxokRIFQpFCE50CiIgUF29BR8go0NHTUNFuEluegwShUoIXtQEIUCBAGBY1hkGNsz/nn4lvONt44x3P55psz49gZ9E9MIBNHaiAUFiGBwlJYBAEiVM1SWAQBIlTNOgRYeZ7v6v1cLpdJBz9p4cSgiUMtpBc3L/13zY3nZ+W5oiiwWq0eAHgC4Ju4cEfgpGAZUE2Qqn388usT7p9d2QK4BuANgKsHB0sCykA5Pj16CWAJ4AeALM/z87Gm5yTMkoIqp+DuO+69u/gVwAUAr59e/ryw09N8HwJudrAMkI/Fe3wo3uLR41t7M/DV9bz87Ats9LAYq/5Ow3+AdifN2cpA8wE2K1jHp0d7dNpg2aDsDvdDwqxgSc2qEmWAzQ7W3Yf7drm2DQrLRajyvcJSWHIC0qnIWGVqD85ZTTe0Xd1il2x261Ct2wWtN1hdN7RdsKq76XpcE8gQWLb8JmgsKG+zYnSgCWgbSNfNs2twWJvbyqOnYSpQ8owki7TgY4GizZoKKNMxAysmKArWlEApLNnsK6NSWCU2S636M1KiBK+wFBYxsRWWwtIETziQaiWcZYJPsXO3YzW71VBhTWkamrZOZa81eM5SWMQ+y86CKdg1CrOmACwlKPHWoZ5fx2rYKGHZHGaOIT/5EoucMzQ1KG+zqi2vPt0ZClwfoLxgbTab3Xq9zpqOi8Wi1YBUIC0o2x6nggEBoh08U/7uBOWLsfZdKMm1PiBT7tTb2kzD6jLLGnf75xrPzm1QP1aNZB/O1juw3W7RZLhkcHxjaFhdFVmrWkeGfB+qul0x/8d+WsNCo2HFMktSTltu7DrPAmDiaViuwrvs8nlk7qqvz+9pWBIjJDlLUs7szZKOdJOBYzcviVkuI9rMs+dd188mZ0nMmmpeo82yMEJyTgqzJIMUGuMNK6TigzMrxLCYZoUMGnvtIGaZRh7Eatg2GiE5zGf1Y62IET+YWTEa33cZ0WGlNqxvQNX6osMasjOp6+4Nlq9xqQEw5fcGi2nUWGMVFjEyCkthEQSIUDVLYREEiNDfK1pxcx71PlIAAAAASUVORK5CYII=" alt="Puroose">
+         </div>
+         <div class="flex">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABVCAYAAADnu9JFAAAAAXNSR0IArs4c6QAAAwtJREFUeF7tm1GO2yAQhm2pp4nW12ke9nxbKT1OvcppKrkiXbaUtYH5Z4jB/vOSBzNgPn8MGNvjwB9EYISiGDQQHCgBwREcSAAMo3EEBxIAw2gcwYEEwDAaR3AgATCMxhEcSAAMO4xx8zwvKQbTNJn21bQy8OKpwjyw6WX6Wk/Qu3meH8etAHYLLgnMEYp79uHj/P4XoP+hILsGt2pZSCXs3TIMy491ucdX+S5Rl+CcbVloAaMtYDFGCcBTgAt9Wt62U+qhwUltiwdhCtwjNRYO2+6Mk4Jzw3R8/WcZwRUuYkrzm6+OxnFy+F8t6VB10aXWldq2tkwsHAD7FkPgpQBKgH0O6X0RyFtHocUt+TuI09w5WIBz0FBgpzVOa9rpwFkBOyU47fDc2j+QZ+odItAcZ5HXugC3taMr2RUJO3oocKntbhTQ2iCwhvaUBfCz4KSyRhfgYlCW5qAptWlw2WcAaK8N4poFh850BkyKqmgSXOvQHNnmwPUArTlwZ4amWo4QXFF61e/CAs2YhNTIb7Bxvdjm85v7t7zBJziF09Bz1d6Ms7btNMYRHDC0ODk0BO3wQ7WWbYcGVxMaDO6xPhK+3AeMNDikNrRDgnsGNBW41qzzz03v9/twvV6h9alEcXUDew7Z8A3yGmu1FEg1uNvttlwul6HWs4X49fqwMw6Wa98ZtvUvsUhSVg3ON6Z55pCDI+nQs8qqwcVXOvdpUK5jPkflTCo9nmsPPa4Gl2r408JpGreAvvz6+ikR8qIfCgCNU4MrvfJr5b7/vg4/v92G+D+Vs6TtoWBycWpwuQbWji9vQ/JLPxqXmO2cOTQO0C5lHY2jcYBSHyFrZvVgVK7HZpODZNb0uc1y9ozbz3Vce9wMnHT27N06c3Dhld+aNWsapzWpNN4cXNhw7zNn1d2RrcpT67QaxpWaYlWuqnHuJDmrgpdKem8pLQ+eljqsunHqM2y0gt3ASc3y5VvhuBu4VgCg50FwIDmCIziQABhG4wgOJACG0TiCAwmAYTSO4EACYBiNIziQABj2B3b3bYPmzuB5AAAAAElFTkSuQmCC" alt="Groose">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABACAYAAACjgtGkAAAAAXNSR0IArs4c6QAAAzFJREFUeF7tmr+S0zAQxj/PXElBxwPQZTCvwPAGmRSkoL2eZ6FPxcwNE4q8Au+AKWhSUNBQUVDxZ8LIOR2KIkvf6iTZzuma5OKVdvXTtyvJdoP6d0KgqTxOCVQgliIqkArEXySqQqpCqkJEC+lsUqbruoM9srZtk8efvEPRdBDGGkT7tj2z7t50/W8pwUwaiILhAmGTSQlmskBYGBqOgrLf77FcLp8A+E6Iz2kySSBSGPgF4B1+AHgM4C+ApwC+xkCJBuIqcqmKnhjIBj8BPALQF97dbtesVquosYkb+YpcitwWw1DqeA/gN74BuALwBdd4oVIoptiKgIiDvSWkix6zIkT5ULqwRpIdSFSglmQYMJSfjdHx9fH74eX/35qPx+8xUCiFUEEKKpgPTNCXCUOBuBl2/Pm5fJ8SBCKpGQImd6b2HiIIRLU0oPiAaCfNazuhhiOlgDCboxgYZpsT1Th2pa7+zTQJ+WeheIFQsxWKRHi9z/sKREjt1lyiENWEUcnkFCJFI4FSgVh0HwQQew8ypDAGRp9WPomOUVSlKaPtVTF+9un8nol06b0oIPrscrg5HvLYQmpOwkUAidmiD6bWJaRMMSAK1hzqSAViybookDmopDiQqUMZBcikoWz4431onxM8/tsd5L4/Egr4LJ7Ie6dRy+5Qo+12e1gsFv1l9qguHShrnzJdglt3JqixFTMqEKWM9Xrd2J/mM5rSihkVSEgxpcGkhkGnzJAyxlbMaEBCyhi6rk6dd48CyPukrK8cMLIpxFTOqz9rfLjaQq9KKVYmDUP7YSEyduJ9CNOpsjHvSZhttGJiwaR8F8Q1FgqItIa4FKKVoj/VaiVZsk0QdjzsJDF2FBCmI58qnDNhPE2zX61QS7f54KpXU4b3ybIqxFZA6H/XfiZWieyEMXbJFDJUM/rKLXi2ygSd04YCwsxcSUXMooY8KIVoifqUMoZCcqQOlTKsY5dK5lQ/6J2qDYSpKSlXkZw1wx5bUoWwSpqy3b2AlFZKCZD3AlIiwNI+kgDJrZSSUJIAKRlwbl9ZgcQqJ/egff1nBTLmwGJ9VyAWuQqkAvEnU1VIVYhfIf8AR1hhbpfICzYAAAAASUVORK5CYII=" alt="Foroose">
+         </div>
       </div>
-      <div class="flex">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABVCAYAAADnu9JFAAAAAXNSR0IArs4c6QAAAwtJREFUeF7tm1GO2yAQhm2pp4nW12ke9nxbKT1OvcppKrkiXbaUtYH5Z4jB/vOSBzNgPn8MGNvjwB9EYISiGDQQHCgBwREcSAAMo3EEBxIAw2gcwYEEwDAaR3AgATCMxhEcSAAMO4xx8zwvKQbTNJn21bQy8OKpwjyw6WX6Wk/Qu3meH8etAHYLLgnMEYp79uHj/P4XoP+hILsGt2pZSCXs3TIMy491ucdX+S5Rl+CcbVloAaMtYDFGCcBTgAt9Wt62U+qhwUltiwdhCtwjNRYO2+6Mk4Jzw3R8/WcZwRUuYkrzm6+OxnFy+F8t6VB10aXWldq2tkwsHAD7FkPgpQBKgH0O6X0RyFtHocUt+TuI09w5WIBz0FBgpzVOa9rpwFkBOyU47fDc2j+QZ+odItAcZ5HXugC3taMr2RUJO3oocKntbhTQ2iCwhvaUBfCz4KSyRhfgYlCW5qAptWlw2WcAaK8N4poFh850BkyKqmgSXOvQHNnmwPUArTlwZ4amWo4QXFF61e/CAs2YhNTIb7Bxvdjm85v7t7zBJziF09Bz1d6Ms7btNMYRHDC0ODk0BO3wQ7WWbYcGVxMaDO6xPhK+3AeMNDikNrRDgnsGNBW41qzzz03v9/twvV6h9alEcXUDew7Z8A3yGmu1FEg1uNvttlwul6HWs4X49fqwMw6Wa98ZtvUvsUhSVg3ON6Z55pCDI+nQs8qqwcVXOvdpUK5jPkflTCo9nmsPPa4Gl2r408JpGreAvvz6+ikR8qIfCgCNU4MrvfJr5b7/vg4/v92G+D+Vs6TtoWBycWpwuQbWji9vQ/JLPxqXmO2cOTQO0C5lHY2jcYBSHyFrZvVgVK7HZpODZNb0uc1y9ozbz3Vce9wMnHT27N06c3Dhld+aNWsapzWpNN4cXNhw7zNn1d2RrcpT67QaxpWaYlWuqnHuJDmrgpdKem8pLQ+eljqsunHqM2y0gt3ASc3y5VvhuBu4VgCg50FwIDmCIziQABhG4wgOJACG0TiCAwmAYTSO4EACYBiNIziQABj2B3b3bYPmzuB5AAAAAElFTkSuQmCC" alt="Groose">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABACAYAAACjgtGkAAAAAXNSR0IArs4c6QAAAzFJREFUeF7tmr+S0zAQxj/PXElBxwPQZTCvwPAGmRSkoL2eZ6FPxcwNE4q8Au+AKWhSUNBQUVDxZ8LIOR2KIkvf6iTZzuma5OKVdvXTtyvJdoP6d0KgqTxOCVQgliIqkArEXySqQqpCqkJEC+lsUqbruoM9srZtk8efvEPRdBDGGkT7tj2z7t50/W8pwUwaiILhAmGTSQlmskBYGBqOgrLf77FcLp8A+E6Iz2kySSBSGPgF4B1+AHgM4C+ApwC+xkCJBuIqcqmKnhjIBj8BPALQF97dbtesVquosYkb+YpcitwWw1DqeA/gN74BuALwBdd4oVIoptiKgIiDvSWkix6zIkT5ULqwRpIdSFSglmQYMJSfjdHx9fH74eX/35qPx+8xUCiFUEEKKpgPTNCXCUOBuBl2/Pm5fJ8SBCKpGQImd6b2HiIIRLU0oPiAaCfNazuhhiOlgDCboxgYZpsT1Th2pa7+zTQJ+WeheIFQsxWKRHi9z/sKREjt1lyiENWEUcnkFCJFI4FSgVh0HwQQew8ypDAGRp9WPomOUVSlKaPtVTF+9un8nol06b0oIPrscrg5HvLYQmpOwkUAidmiD6bWJaRMMSAK1hzqSAViybookDmopDiQqUMZBcikoWz4431onxM8/tsd5L4/Egr4LJ7Ie6dRy+5Qo+12e1gsFv1l9qguHShrnzJdglt3JqixFTMqEKWM9Xrd2J/mM5rSihkVSEgxpcGkhkGnzJAyxlbMaEBCyhi6rk6dd48CyPukrK8cMLIpxFTOqz9rfLjaQq9KKVYmDUP7YSEyduJ9CNOpsjHvSZhttGJiwaR8F8Q1FgqItIa4FKKVoj/VaiVZsk0QdjzsJDF2FBCmI58qnDNhPE2zX61QS7f54KpXU4b3ybIqxFZA6H/XfiZWieyEMXbJFDJUM/rKLXi2ygSd04YCwsxcSUXMooY8KIVoifqUMoZCcqQOlTKsY5dK5lQ/6J2qDYSpKSlXkZw1wx5bUoWwSpqy3b2AlFZKCZD3AlIiwNI+kgDJrZSSUJIAKRlwbl9ZgcQqJ/egff1nBTLmwGJ9VyAWuQqkAvEnU1VIVYhfIf8AR1hhbpfICzYAAAAASUVORK5CYII=" alt="Foroose">
+      <div style="text-align:center">
+         <ol id="names-list">
+            <li>Roose</li>
+            <li>Puroose</li>
+            <li>Groose</li>
+            <li>Foroose</li>
+         </ol>
       </div>
-    </div>
-    <div id="names-container">
-      <ol id="names-list">
-        <li>Roose</li>
-        <li>Puroose</li>
-        <li>Groose</li>
-        <li>Foroose</li>
-      </ol>
-    </div>
-  </body>
+      <button type="button" class="button" onclick="window.location.href = 'more.html'">More Information...</button>
+   </body>
 </html>
